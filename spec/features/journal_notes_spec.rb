@@ -138,7 +138,7 @@ feature 'Journal notes', js: true do
               visit_issue(@issue)
               open_issue_description_edit_area(@issue)
               select_format('#pwfmt-select-issue_description', issue_format == 'markdown' ? 'textile' : 'markdown')
-              find('#issue_description').set(issue_format == 'markdown' ? textile_raw_text : markdown_text)
+              find('#issue_description').set(issue_format == 'markdown' ? textile_raw_text : markdown_raw_text)
               select_format('#pwfmt-select-issue_notes', issue_format)
               find('#issue_notes').set(issue_format == 'markdown' ? markdown_raw_text : textile_raw_text)
               find('#issue-form').find('input[name=commit]').click
