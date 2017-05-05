@@ -1,16 +1,9 @@
 language: ruby
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1.5
-  - 2.2
+  - 2.2.6
+  - 2.3.3
 env:
-  - TARGET=redmine REDMINE_VERSION=2.6.2
-  - TARGET=plugin REDMINE_VERSION=2.6.2
-  - TARGET=redmine REDMINE_VERSION=3.0.0
-  - TARGET=plugin REDMINE_VERSION=3.0.0
+  - TARGET=redmine REDMINE_VERSION=3.2.6
+  - TARGET=plugin REDMINE_VERSION=3.2.6
 before_install: sh travis/before_install.sh
 script: sh travis/exec_test.sh
-matrix:
-  allow_failures:
-    - rvm: 2.2
