@@ -4,9 +4,6 @@ export REDMINE_LANG=en
 export RAILS_ENV=test
 PLUGIN_NAME="redmine_persist_wfmt"
 
-bundle update rake
-bundle update rspec-rails
-
 # Initialize redmine
 bundle exec rake generate_secret_token
 bundle exec rake db:migrate
