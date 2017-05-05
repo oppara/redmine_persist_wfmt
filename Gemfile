@@ -18,5 +18,3 @@ group :test do
   gem 'database_cleaner'
   gem 'coveralls' if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('2.0.0')
 end
-
-gem 'rake', '< 11.0'
